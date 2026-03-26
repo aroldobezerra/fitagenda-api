@@ -38,6 +38,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 // ── Rotas ─────────────────────────────────────────────────
 app.use('/auth',       require('./routes/auth'));
+app.use('/admin',      require('./routes/admin'));
 app.use('/horarios',   require('./routes/horarios'));
 app.use('/planos',     require('./routes/planos'));
 app.use('/',           require('./routes/agendamentos'));
